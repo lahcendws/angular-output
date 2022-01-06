@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angumar-output';
+  public onomatopoeias:string []=['waw','zap','boom'];
+
+
+  onReceiveNewOnomatopia(newOnomatopia:string){
+    this.onomatopoeias.push(newOnomatopia);
+  }
 }
